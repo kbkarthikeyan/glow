@@ -311,8 +311,8 @@ struct OptimizationOptions {
     PRINT_VALUE(foldElemKindConversionIntoIO, dump_str)
     PRINT_VALUE(foldStaticPlaceholderConversions, dump_str)
     PRINT_VALUE(useSparseNNPartitioningScheme, dump_str)
-    if (enableAPLASAPPlacement.hasValue()) {
-      PRINT_VALUE(enableAPLASAPPlacement.getValue(), dump_str)
+    if (enableAPLASAPPlacement.has_value()) {
+      PRINT_VALUE(enableAPLASAPPlacement.value(), dump_str)
     }
     PRINT_VALUE(enableTypeDemotion, dump_str)
     PRINT_VALUE(enableQuantParamChanges, dump_str)
